@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.panel-container {
+    background-color: #ffffff;
+    box-shadow:  0 10px 15px rgba(255, 0, 0, 0.5);
+    color: #ff0000;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+}
+.panel-container strong {
+    line-height: 20px;
+    color: #ff0000;
+}
+.ratings-container {
+    display: flex;
+    margin: 20px 0;
+}
+.rating {
+    flex: 1;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 5px;
+}
+.rating:hover,
+.rating.active {
+    border-radius: 4px;
+    box-shadow:  0 10px 15px rgba(0, 0, 0, 0.5);
+}
+.rating img {
+    width: 60px;
+}
+.rating small {
+    color: #555555;
+    display: inline-block;
+    margin: 10px 0 0 ;
+}
+.rating:hover small,
+.rating.active small {
+    color: #ff0000;
+}
+.btn {
+    background-color: #ff0000;
+    box-shadow:  0 10px 15px rgba(255, 0, 0, 0.5);
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+.btn:focus {
+    outline: 0;
+}
+.bnt:active{
+    transform: scale(0.98);
+}
+.fa-heart {
+    color: #ff0000;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
